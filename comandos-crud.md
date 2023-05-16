@@ -45,3 +45,26 @@ INSERT INTO produtos(nome, descricao, fabricante_id)
 VALUES("Ultrabook", "Equipamento com processador AMD Ryzen, 12 GB de RAM.", 2 );
 
 ```
+
+### Ler dados da tabela Produtos
+
+```sql
+SELECT * FROM produtos;
+
+SELECT nome, descricao FROM produtos;
+
+SELECT descricao, nome FROM produtos;
+
+-- Exercicio: trazer o nome dos produtos apenas da Apple
+-- Dica: use comando WHERE para indicar essa condição
+
+SELECT nome FROM produtos WHERE fabricante_id = 4;
+
+
+SELECT nome FROM produtos WHERE fabricante_id != 4;
+
+-- OPERADOR OU: OR
+SELECT nome, descricao FROM produtos
+WHERE fabricante_id = 2 OR fabricante_id = 3;
+
+```
