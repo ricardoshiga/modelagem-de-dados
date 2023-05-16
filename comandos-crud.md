@@ -60,11 +60,21 @@ SELECT descricao, nome FROM produtos;
 
 SELECT nome FROM produtos WHERE fabricante_id = 4;
 
-
 SELECT nome FROM produtos WHERE fabricante_id != 4;
 
 -- OPERADOR OU: OR
 SELECT nome, descricao FROM produtos
 WHERE fabricante_id = 2 OR fabricante_id = 3;
+
+SELECT nome, descricao FROM produtos ORDER BY nome;
+
+-- ORDENAR POR ORDEM DECRECENTE
+SELECT nome, descricao FROM produtos ORDER BY nome DESC;
+
+--COUNT(campo especial) é uma função de contagem de registros
+SELECT COUNT(id) FROM produtos;
+
+-- Usa AS para definir um apelido para a coluna de resultados
+SELECT COUNT(id) AS Quantidade FROM produtos;
 
 ```
